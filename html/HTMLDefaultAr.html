@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Tutorial</title>
+        <link rel="stylesheet" href="../css/styleDEF.css">
+        <link rel="stylesheet" href="../css/styleDEFAr.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav id="navbar"><!--start of navbar-->
+
+            <a class="logo" href="indexAr.html">omar</a>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="check-button">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div id="searchBox" class="search-box">
+                <button type="button" class="i"><i class="fas fa-search"></i></button>
+                <input type="text" class="input">
+            </div>
+
+            <div class="navigation"><!--start of navigation-->
+            
+                <a id="search" class="anc" onclick="search_op()"><i class="fas fa-search"></i></a>
+                <a id="book" class="anc" onclick="book()"><b><i class="fas fa-book"></i> HTML</b></a>
+                <a class="anc" href="../indexAr.html"><i class="fas fa-home"></i></a>
+
+                <div class="social"><!--start of social icon-->
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div><!--end of social icon-->
+
+            </div><!--end of navigation-->
+
+        </nav><!--end of navbar-->
+
+        <section id="main">
+            <article class="box">
+                <h1>HTML</h1>
+                <ol type="1">
+                    <li> هي لغة الترميز القياسية لصفحات الويب.</li>
+                    <li>هي اختصار لـ  Hypertext Markup Language (لغة النص الفائق). </li>
+                    <li>باستخدام HTML ، يمكنك إنشاء موقع الويب الخاص بك.</li>
+                    <li>لغة HTML سهلة التعلم - ستستمتع بها!</li>
+                </ol>
+                <h1>بنية صفحات HTML</h1>
+                <p>
+                    تتألف صفحات HTML من عناصر، والتي تتألف عادةً من :
+                </p>
+                <ul>
+                    <li>وسم البداية : وهو يحتوي على اسم العنصر، موضوعًا ضمن قوسين على شكل زاوية.</li>
+                    <li>الخاصيات : وهي التي تؤثر علي العنصر.</li>
+                    <li>المحتوى: وهو موجودٌ بين وسمَي البداية والنهاية، ويُمثِّل في معظم الأحيان محتوى العنصر.</li>
+                    <li>وسم النهاية: وهو يحتوي على اسم العنصر أيضًا مسبوقًا بخطٍ مائل قبله للإشارة إلى نهاية العنصر.</li>
+                </ul>
+                <h1>اوسام HTML</h1>
+                <h2>الاساسية :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#DOCTYPE.html">&lt;!DOCTYPE&gt;</a></code></td>
+                            <td>يستخدم لتحديد نوع المستند.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#html.html">&lt;html&gt;</a></code></td>
+                            <td>العنصر الرئيسي في مستندات HTML. يجب أن تكون جميع العناصر الأخرى في المستند سليلةً له.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#head.html">&lt;head&gt;</a></code></td>
+                            <td>يحتوي علي بيانات تعريف ومعلومات للمستند.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#title.html">&lt;title&gt;</a></code></td>
+                            <td>يستخدم لتحديد اسم المستند ,الذي يظهر في شريط العنوان للمتصفح أو في لسان المستند.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#body.html">&lt;body&gt;</a></code></td>
+                            <td>يستخدم لتمثيل محتوي المستند ,ولا يجوز أن يكون هنالك أكثر من عنصر &lt;body&gt; واحد في المستند.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#heading.html">&lt;h1&gt;to&lt;h6&gt;</a></code></td>
+                            <td>يستخدم لتحديد العناوين في المستند ,وتمثل العناصر 6 مستويات حيث &lt;h1&gt; اعلي مستوي حجما و &lt;h6&gt; اقل مستوي حجما.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#paragraph.html">&lt;p&gt;</a></code></td>
+                            <td>يستخدم لتحديد الفقرات في المستند.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#br.html">&lt;br&gt;</a></code></td>
+                            <td>لتحديد للقيام بإدراج مساحة سطر واحد ,حيث يؤدي إلى الانتقال إلى سطرٍ جديد.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#hr.html">&lt;hr&gt;</a></code></td>
+                            <td>يستخدم لتمثيل فاصل موضوعي بين الفقرات يعرض علي شكل خط افقي.<br>في الاصدارات الحالية أصبح له معنى هيكلي بدلًا من كونه عنصرًا شكليًا فقط.</tr>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#comment.html">&lt;!--...--&gt;</a></code></td>
+                            <td>يستخدم لكتابة تعليق ,ولكن هذا التعليق لا يظهر في المستند.</tb>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>التنسيق : </h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#abbr.html"class="red">&lt;acronym&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5 , استخدم &lt;abbr&gt; بدلا منها.<br>يستخدم لكتابة اختصار ووضع شرح له ,ويظهر هذا الشرح عند وضع الماوس علي الاختصار. </td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#abbr.html">&lt;abbr&gt;</a></code></td>
+                            <td> يستخدم لكتابة اختصار ووضع شرح له ,ويظهر هذا الشرح عند وضع الماوس علي الاختصار.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#address.html">&lt;address&gt;</a></code></td>
+                            <td>يستخدم لتوفير معلومات الاتصال للمؤلف صاحب المستند او المقالة او صاحب المحتوي الموجود في اقرب &lt;article&gt; او اقرب عنصر تقسيمي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#bold.html">&lt;b&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص عريض ليس له اولوية أو اهمية علي بقية النصوص.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#bdi.html">&lt;bdi&gt;</a></code></td>
+                            <td>يستخدم ليعزل جزءا من نص يمكن تنسيقة باتجاه نص مختلف عن اتجاه النص الذي حوله.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#bdo.html">&lt;bdo&gt;</a></code></td>
+                            <td>يستخدم للقيام بعكس اتجاه النص حسب الاتجاه المحدد له.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#big.html"class="red">&lt;big&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5 ,استخدم خصائص css بدلا منه.<br>يستخدم لكتابة نص كبير.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#blockquote.html">&lt;blockquote&gt;</a></code></td>
+                            <td>يستخدم للإشارة الي ان النص الموجود داخله مأخوذ من مصدر آخر أو هو عبارة عن اقتباس.<br>في العادة يعرض هذا النص مع محاذاة قبله ,يمكن تحديد مصدر الاقتباس عن طريق الخاصية cite.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#center.html"class="red">&lt;center&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5 ,استخدم خصائص css بدلا منه.<br>يستخدم لكتابة نص في وسط السطر.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#cite.html">&lt;cite&gt;</a></code></td>
+                            <td>يستخدم لكتابة عنوان عمل فني ,ويمكن أن يكون محتواه مختصرًا.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#code.html">&lt;code&gt;</a></code></td>
+                            <td>يستخدم لكتابة جزء من كود برمجي أو رمز كمبيوتر.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#del.html">&lt;del&gt;</a></code></td>
+                            <td>يستخدم لتحديد نص تم حذفه من المستند.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#dfn.html">&lt;dfn&gt;</a></code></td>
+                            <td>يستخدم لكتابة مصطلح سيتم تعريفه.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#em.html">&lt;em&gt;</a></code></td>
+                            <td>يستخدم لإعطاء تاكيد للنص بداخله  ,ويعرض النص بداخله مائل.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#red.html"class="red">&lt;font&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5 ,استخدم خصائص css بدلا منه.<br>يستخدم ليحدد اللون والخط وحجم النص.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#i.html">&lt;i&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص يجب أن يتميز عن بقية النص ,ويعرض النص بداخله مائل.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#ins.html">&lt;ins&gt;</a></code></td>
+                            <td>يستخدم لتحديد نص اضيف الي المستند.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#kbd.html">&lt;kbd&gt;</a></code></td>
+                            <td>يستخدم لكتابة مدخلات لوحة المفاتيح أو مدخلات المستخدم.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#mark.html">&lt;mark&gt;</a></code></td>
+                            <td>يستخدم لتعليم جزء من نص للإشارة الي انه مهم.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#meter.html">&lt;meter&gt;</a></code></td>
+                            <td>يستخدم لتمثيل قيمة عددية داخل نطاق معلوم.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#pre.html">&lt;pre&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص يعرض كما هو ,وستُعرَض الفراغات الموجودة في النص كما هي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#progress.html">&lt;progress&gt;</a></code></td>
+                            <td>يستخدم لتمثيل علامة التقدم لإنجاز مهمة ما ,ويُعرَض عادةً على شكل شريط.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#q.html">&lt;q&gt;</a></code></td>
+                            <td>يستخدم لكتابة اقتباس قصير ,ويعرض عادة داخل علامتي تنصيص.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#rp.html">&lt;rp&gt;</a></code></td>
+                            <td>يستخدم لتوفير اقواس حول نص مكتوب داخل وسم &lt;ruby&gt; لتظهرها المتصفحات التي لا تدعم التعليقات التوضيحية.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#rt.html">&lt;rt&gt;</a></code></td>
+                            <td>يستخدم لتحديد شرح أو نطق للكلمات في كتابة دول شرق آسيا ,وتستخدم داخل وسم &lt;ruby&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#ruby.html">&lt;ruby&gt;</a></code></td>
+                            <td>يستخدم لإضافة نص صغير مرفق بالنص الرئيسي للإشارة الي نطق او شرح الكلمات المقابلة.<br>غالبا ما يستخدم هذا النوع في المنشورات اليابانية.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#s.html">&lt;s&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص يتوسطه خط ,ويستخدم لإظهار ان النص المكتوب لم يعد له علاقة بالموضوع.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#samp.html">&lt;samp&gt;</a></code></td>
+                            <td>يستخدم لإخراج ناتج من برنامج حاسوبي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#small.html">&lt;small&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص صغير.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#strike.html"class="red">&lt;strike&gt;</a></code></td>
+                            <td>غير مدعوم في HTML 5 , استخدم &lt;del&gt; أو &lt;s&gt; بدلا منه.<br>يستخدم لكتابة نص يتوسطه خط .</td>
+                        <tr>
+                            <td><code><a href="#.html">&lt;strong&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص عريض له أهمية.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#sub.html">&lt;sub&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص يعرض في مستوي أدني من مستوي النص الرئيسي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#sup.html">&lt;sup&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص يعرض في مستوي أعلي من مستوي النص الرئيسي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#template.html">&lt;template&gt;</a></code></td>
+                            <td>يستخدم لكتابة محتوي مخفي عن المستخدم عند تحميل الصفحة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#time.html">&lt;time&gt;</a></code></td>
+                            <td>يستخدم لكتابة وقت.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#tt.html"class="red">&lt;tt&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5 ,استخدم خصائص css بدلا منه.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#u  .html">&lt;u&gt;</a></code></td>
+                            <td>يستخدم لكتابة نص مع وضع خط أفقي تحته.<br>في العادة يستخدم للإشارة أن النص يحتوي علي خطأ إملائي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#var.html">&lt;var&gt;</a></code></td>
+                            <td>يستخدم لتحديد متغير برمجي أو تعبير رياضي.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#wbr.html">&lt;wbr&gt;</a></code></td>
+                            <td>يستخدم للسماح للمتصفح أن يقسم السطر عند موضع معين علي الرغم من أن قواعد قسم السطر لا تسمح بإنشاء سطر جديد في ذلك الموضع.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>النماذج والإدخال :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#form.html">&lt;form&gt;</a></code></td>
+                            <td>يستخدم لعمل نموذجيحتوث علي عناصر يمكن للمستخدم التفاعل معها.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#input.html">&lt;input&gt;</a></code></td>
+                            <td>يستخدم لإنشاء عناصر تفاعلية للنماذج وهي تقبل معطيات من المستخدم.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#textarea.html">&lt;textarea&gt;</a></code></td>
+                            <td>يستخدم لعمل مربع يمكن الكتابة بداخله ويحتي علي العديد من الاسطر.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#button.html">&lt;button&gt;</a></code></td>
+                            <td>يستخدم لعمل زر.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#select.html">&lt;select&gt;</a></code></td>
+                            <td>يستخدم لعمل قائمة منسدلة ,ويستخدم الوسم &lt;option&gt; لعمل خيارات القائمة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#optgroup.html">&lt;optgroup&gt;</a></code></td>
+                            <td>يستخدم لكتابة عنوان لكل مجموعة من الخيارات داخل القائمة المنسدلة التي يقوم بعملها الوسم &lt;select&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#option.html">&lt;option&gt;</a></code></td>
+                            <td>يقوم بعمل خيار داخل القائمة المنسدلة التي يقوم بعملها الوسم &lt;select&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#label.html">&lt;label&gt;</a></code></td>
+                            <td>يقوم بعمل لافتة لأحد عناصر النموذج.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#fieldset.html">&lt;fieldset&gt;</a></code></td>
+                            <td>نقوم بتجميع عدة عناصر داخلها حتي تكون النماذج اسهل استخداما.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#legend.html">&lt;legend&gt;</a></code></td>
+                            <td>تمثل لافتة للعنصر &lt;fieldset&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#datalist.html">&lt;datalist&gt;</a></code></td>
+                            <td>يستخدم لعمل قائمة من الخيارات المحددة مسبقا ,ويستخدم الوسم &lt;option&gt; لعمل خيارات القائمة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#html.html">&lt;output&gt;</a></code></td>
+                            <td>يستخدم لإظهار ناتج  عملبة حسابية.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>الإطارات :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#iframe.html" class="red">&lt;frame&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#iframe.html" class="red">&lt;frameset&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#iframe.html" class="red">&lt;noframes&gt;</a></code></td>
+                            <td>غير مدعومة في HTML 5.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#iframe.html">&lt;iframe&gt;</a></code></td>
+                            <td>يستخدم لعمل إطار يحتوي علي وثيقة أخري.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>الصور :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#img.html">&lt;img&gt;</a></code></td>
+                            <td>يستخدم لإدراج صورة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#map.html">&lt;map&gt;</a></code></td>
+                            <td>يستخدم مع الوسم &lt;area&gt; لتعريف خريطة للصورة (إضافة مناطق قابلة للنقر عليها في الصورة).</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#area.html">&lt;area&gt;</a></code></td>
+                            <td>يستخدم لتعريف خريطة للصورة (إضافة مناطق قابلة للنقر عليها في الصورة).</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#canvas.html">&lt;canvas&gt;</a></code></td>
+                            <td>يستخدم لرسم الرسومات عبر البرمجة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#figcaption.html">&lt;figcaption&gt;</a></code></td>
+                            <td>يستخدم لعمل لافتة أو شرح مرتبط بصورة أو رسمة ,ويجب أن يكون ابنا مباشرا للوسم &lt;figure&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#figure.html">&lt;figure&gt;</a></code></td>
+                            <td>يستخدم لإنشاء محتوى مستقل بحد ذاته , وتستخدم عادة مع لافتة عبر الوسم &lt;figcaption&gt;.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#picture.html">&lt;picture&gt;</a></code></td>
+                            <td>يستخدم لتحديد عدة مصادر عبر الوسم &lt;source&gt; لصورة &lt;img&gt; ,وسيختار المتصفح أنسب مصدر للصورة.</td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#svg.html">&lt;svg&gt;</a></code></td>
+                            <td>يستخدم لعمل رسومات svg.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>الاصوات والفديوهات :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;audio&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;source&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;track&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;video&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>الروابط :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;a&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;link&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;nav&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>القوائم :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;ul&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;ol&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;li&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html" class="red">&lt;dir&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;dl&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;dt&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;dd&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>الجداول :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;table&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;caption&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;th&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;tr&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;td&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;thead&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;tbody&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;tfoot&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;col&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;colgroup&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2> العناصر التقسيمية و style :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;style&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;div&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;span&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;header&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;footer&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;main&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;section&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;artical&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;aside&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;details&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;dialog&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;summary&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;data&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>معلومات التعريف :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;head&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;meta&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;base&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html" class="red">&lt;basefont&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>البرمجة :</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>الوسم</th>
+                            <th>الوصف</th>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;script&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;noscript&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html" class="red">&lt;applet&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;embed&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;abject&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code><a href="#.html">&lt;param&gt;</a></code></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <script src="../js/js.js"></script>
+
+    </body>
+</html>
